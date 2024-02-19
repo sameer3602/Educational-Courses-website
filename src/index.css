@@ -1,0 +1,88 @@
+*{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgba(101, 104, 104,0.5);
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(35, 35, 50);
+    color: white;
+}
+.filter{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.btn{
+    background-color: rgba(1, 1, 14, 0.8);
+    color: white;
+    border-radius: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+}
+.Loadingscreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-color: bisque;
+}
+.loadingtext{
+    color: rgb(20, 16, 16);
+    font-size: 700;
+}
+.Cards{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.SingleCard{
+    width: 200px;
+    height: 210px;
+    background:rgb(232, 232, 230);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px 2px rgba(106, 97, 97, 0.31);
+}
+
+.image{
+    height: 120px;
+    width: 200px;
+    object-fit: cover;
+    box-shadow: 4px -4px 4px 4px rgba(126, 20, 20, 0.8);
+}
+.icon{
+    margin-top: -20px;
+    display: flex;
+    margin-right: 5px;
+    justify-content: end;
+    border-radius:2px;
+}
+.description{
+    overflow: hidden;
+    margin-left: 3px;
+    gap:5px;
+}
+.cardtitle{
+    margin-top: 3px;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    color: rgb(87, 22, 147);
+}
+.carddesc{
+    font-size: 11px;
+    margin-top: 5px;
+}
