@@ -9,6 +9,7 @@ import { toast } from "react-toastify";
 const App = () => {
   const [courses,setCourses]=useState(null);
   const [loading,setLoading]=useState(true);
+  const [category,setcategory]=useState(filterData[0].title)
   async function fetchdata(){
     setLoading(true);
     try{
@@ -32,11 +33,13 @@ const App = () => {
       <Navbar/>
     </div>
     <div>
-      <Filter filterData={filterData}/>
+      <Filter filterData={filterData}
+        category={category}
+        setcategory={setcategory}/>
     </div>
     <div className="cardrender">
       {
-        loading ? (<Spinnner/>):(<Cards courses={courses}/>)
+        loading ? (<Spinnner/>):(<Cards courses={courses} category={category}/>)
       }
     </div>
   </div>);
