@@ -61,7 +61,7 @@ h1{
     height: 120px;
     width: 200px;
     object-fit: cover;
-    box-shadow: 4px -4px 4px 4px rgba(126, 20, 20, 0.8);
+    box-shadow: 4px -5px 4px 4px rgba(126, 20, 20, 0.8);
 }
 .description{
     overflow: hidden;
